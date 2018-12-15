@@ -10,7 +10,7 @@ end
 def contain_a(array)
   i = 0
   array.each do |a|
-    if (a.include? "a") == true
+    if ((a.include? "a") == true)
       array[i] = a
     else
       array.delete_at(i)
