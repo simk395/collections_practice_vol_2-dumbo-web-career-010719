@@ -16,7 +16,13 @@ def contain_a(array)
   array
 end
 
-def first_wa
+def first_wa(array)
+  array.each do |name|
+    chars = name.chars
+    if chars[0] == "w" && chars[1] == "a"
+      return name
+    end
+  end
 end
 
 def remove_non_strings
