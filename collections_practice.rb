@@ -17,9 +17,8 @@ def contain_a(array)
 end
 
 def first_wa(array)
-  chars = []
   array.each do |name|
-    chars = name.chars
+    chars = name.split("")
     if chars[0] == "w" && chars[1] == "a"
       return name
     end
