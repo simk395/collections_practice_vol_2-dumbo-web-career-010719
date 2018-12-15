@@ -1,13 +1,20 @@
 # your code goes here
 def begins_with_r(array)
   array.sort do |x,y|
-    if x == y
-      return true
+    if ((x<=>y) != 0)
+      return false
     end
   end
 end
 
-def contain_a
+def contain_a(array)
+  i = 0
+  array.each do |a|
+    if a.include? "a"
+      array[i] = a
+    else
+      array.delete_at(i)
+    end      
 end
 
 def first_wa
