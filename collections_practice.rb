@@ -9,7 +9,7 @@ end
 
 def contain_a(array)
   array.each do |name|
-    if ((name.include? "a") == false)
+    if (name.include?"a" == false)
       array.delete(name)
     end
   end
