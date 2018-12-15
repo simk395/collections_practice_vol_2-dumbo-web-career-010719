@@ -1,7 +1,7 @@
 # your code goes here
 def begins_with_r(array)
   array.sort do |x,y|
-    if x<=>y != 0
+    if (x<=>y != 0)
       return false
     end
   end
