@@ -9,15 +9,14 @@ end
 
 def contain_a(array)
   i = 0
-  array.each do |a|
-    if ((a.include? "a") == true)
-      array[i] = a
-    else
+  array.each do |name|
+    if ((name.include? "a") == false)
       array.delete_at(i)
     end
-    i+=1
+    i += 1
   end
-end
+  array
+  end
 
 def first_wa
 end
