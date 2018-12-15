@@ -15,6 +15,7 @@ def contain_a(array)
     else
       array.delete_at(i)
     end
+    i+=1
   end
 end
 
