@@ -1,11 +1,10 @@
 # your code goes here
 def begins_with_r(array)
   array.sort do |x,y|
-    if ((x<=>y) == 0)
-      true
+    if x<=>y == 0
+      return true
     else
-      false
-    end
+      return false
   end
 end
 
