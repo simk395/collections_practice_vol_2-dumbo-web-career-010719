@@ -8,15 +8,13 @@ def begins_with_r(array)
 end
 
 def contain_a(array)
-  i = 0
   array.each do |name|
     if ((name.include? "a") == false)
-      array.delete_at(i)
+      array.delete(name)
     end
-    i += 1
   end
   array
-  end
+end
 
 def first_wa
 end
