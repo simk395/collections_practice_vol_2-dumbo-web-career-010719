@@ -14,7 +14,7 @@ def contain_a(array)
       array[i] = a
     else
       array.delete_at(i)
-    end      
+    end
 end
 
 def first_wa
